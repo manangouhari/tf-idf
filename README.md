@@ -9,3 +9,11 @@ To learn more about the algorithm, check out the following resources -
 --------------
 TF-IDF is an algorithm applied over a set of documents, for document summarization, I considered every sentence as a separate sentence and the sentences with the highest TF-IDF score are the most informative one. 
 
+```tf(word) = total count of word / total number of words```
+```tf(sentence) = sum of tf of all non stopword words / number of non stopword words in the sentence```
+```idf(word) = log(total number of sentences / total count of words)```
+```idf(sentence) = sum of idf of all non stopword words / number of non stopword words in the sentence```
+
+```tfidf(setence) = tf of sentence * idf of sentence```
+
+To test the code, change the paragraph variable in tfidf.py, the program spits out all the sentences ranked in order of their tfidf scores, highest to lowest, i.e. most informative to least informative.
