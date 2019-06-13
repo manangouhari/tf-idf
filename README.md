@@ -18,5 +18,6 @@ TF-IDF is an algorithm applied over a set of documents, for document summarizati
 ```idf(sentence) = sum of idf of all non stopword words / number of non stopword words in the sentence```
 ----
 ```tfidf(setence) = tf of sentence * idf of sentence```
+----
 
 To test the code, change the paragraph variable in tfidf.py, the program spits out all the sentences ranked in order of their tfidf scores, highest to lowest, i.e. most informative to least informative.
